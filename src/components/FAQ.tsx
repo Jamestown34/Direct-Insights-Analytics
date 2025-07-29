@@ -5,9 +5,9 @@ import { useTheme } from "@/components/theme-provider"; // Optional if you use a
 
 const faqItems = [
   {
-    question: "Why choose Beckley Jones Analytics?",
+    question: "Why choose Direct Insights Tech?",
     answer:
-      "Beckley Jones Analytics is powered by a seasoned team of data specialists with years of hands-on experience across industries. From data infrastructure to strategic analytics, we bring leadership and depth to every engagement. Our client base spans regions and sectors — feel free to explore our recent projects for tangible results and impact stories.",
+      "Direct Insights Tech is powered by a seasoned team of data specialists with years of hands-on experience across industries. From data infrastructure to strategic analytics, we bring leadership and depth to every engagement. Our client base spans regions and sectors — feel free to explore our recent projects for tangible results and impact stories.",
   },
   {
     question: "What does Data Analytics involve?",
@@ -25,7 +25,7 @@ const faqItems = [
       "The analytics stack is a curated suite of software and technologies used to manage data pipelines, perform analysis, and visualize outcomes. It's tailored to your goals — built to scale and adjust as your business evolves.",
   },
   {
-    question: "How can Beckley Jones Analytics support my business?",
+    question: "How can Direct Insights Tech support my business?",
     answer:
       "Our analytics services empower you to decode customer needs, optimize operations, and make confident, data-backed decisions. Whether you’re aiming to increase efficiency, track performance, or develop new strategies — we provide the insights that move your business forward.",
   },
