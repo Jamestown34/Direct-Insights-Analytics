@@ -91,7 +91,7 @@ const Services = () => {
             Our Services
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            We deliver end-to-end data solutions—from architecture to insights—so you can focus on results.
+            We deliver comprehensive data services from actionable analytics to business intelligence so you can focus entirely on results.
           </p>
         </div>
 
