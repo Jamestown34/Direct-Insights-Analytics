@@ -6,6 +6,7 @@ import Cases from "@/components/Cases";
 import Services from "@/components/Services";
 import HowItWorks from "@/components/HowItWorks";
 import FAQ from "@/components/FAQ";
+import CEO from "@/components/CEO"; // ✅ Import CEO section
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -18,9 +19,7 @@ const Index = () => {
       <Services />
       <HowItWorks />
       <FAQ />
-
-      {/* Removed hardcoded About section */}
-
+      <CEO /> {/* ✅ CEO section added after FAQ */}
       <Footer />
     </div>
   );
