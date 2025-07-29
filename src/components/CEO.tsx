@@ -11,9 +11,9 @@ const CEO = () => {
             className="w-48 h-60 rounded-full object-cover mb-4" // Image size increased slightly
           />
           <h2 className="text-4xl font-bold mb-2">Atumonye James</h2>
-          <p className="text-xl text-muted-foreground mb-4">CEO & Founder of Beckley Jones Analytics</p>
+          <p className="text-xl text-muted-foreground mb-4">CEO & Founder Direct Insights Technologies</p>
           <p className="text-lg text-muted-foreground">
-            Welcome to Beckley Jones Analytics! We're here to help you turn data into real business solutions. 
+            Welcome to Direct Insights Technologies! We're here to help you turn data into real business solutions. 
             Please fill out the form below and let’s get started on your project!
           </p>
 
