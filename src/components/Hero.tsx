@@ -37,7 +37,7 @@ const Hero = () => {
             Unlock Business <span className="text-white font-extrabold">Growth Through</span> Intelligent Data Analytics
           </h1>
           <p className="text-xl text-white/80 leading-relaxed">
-            Advanced analytics & consulting services to drive strategic decisions and digital transformation for forward-thinking businesses.
+            Advanced analytics & consulting services to drive strategic decisions and digital transformation for forward thinking businesses.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a
