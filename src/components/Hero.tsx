@@ -62,10 +62,10 @@ const Hero = () => {
             ref={keenSliderRef}
             className="keen-slider aspect-video bg-white/10 rounded-2xl overflow-hidden shadow-2xl"
           >
-            {["slide1", "slide2", "slide3", "slide4", "slide5", "slide6"].map((slide, index) => (
+            {["slide1.png", "slide2.png", "slide3.png", "slide5.png", "slide6.png", "slide7.jpg", "slide8.png", "slide9.jpg", "slide10.jpg", "slide12.png", "slide13.png"].map((slide, index) => (
               <div className="keen-slider__slide" key={index}>
                 <img
-                  src={`/images/${slide}.png`}
+                  src={`/images/${slide}`}
                   alt={`Slide ${index + 1}`}
                   className="w-full h-full object-cover"
                 />
