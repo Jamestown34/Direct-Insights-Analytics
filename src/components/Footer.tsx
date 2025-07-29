@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-12">
           <div>
             <h3 className="text-3xl lg:text-4xl font-bold mb-6">
-              Let’s build intelligent solutions together — with data that drives impact
+              Let’s build intelligent solutions together with data that drives impact
             </h3>
             <p className="text-background/80 text-lg mb-8 leading-relaxed">
               Ready to turn your data into a competitive advantage? Get in touch and let’s unlock insights together.
@@ -30,7 +30,7 @@ const Footer = () => {
               <div className="space-y-3">
                 <div className="flex items-center">
                   <Mail className="h-4 w-4 mr-3 text-background/60" />
-                  <span className="text-background/80">chuksjames05@gmail.com</span>
+                  <span className="text-background/80">directinsightstechnologies@gmail.com</span>
                 </div>
                 <div className="flex items-center">
                   <Phone className="h-4 w-4 mr-3 text-background/60" />
@@ -57,10 +57,10 @@ const Footer = () => {
         <div className="border-t border-background/20 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-2xl font-bold mb-4 md:mb-0">
-              Beckley Jones Analytics
+              Direct Insights Technologies
             </div>
             <div className="text-background/60 text-sm">
-              © 2025 Beckley Jones Analytics. All rights reserved.
+              © 2025 Direct Insights Technologies. All rights reserved.
             </div>
           </div>
         </div>
