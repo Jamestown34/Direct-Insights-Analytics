@@ -36,7 +36,7 @@ const ValuePropositions = () => {
             Why choose us?
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            At Beckley Jones Analytics, we combine advanced technical capability with sharp business insight to deliver data systems that move the needle.
+            At Direct Insights Technologies, we combine advanced technical capability with sharp business insight to deliver data systems that move the needle.
           </p>
         </div>
 
