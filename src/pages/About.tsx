@@ -12,10 +12,10 @@ const About = () => {
         }}
       >
         <div className="max-w-4xl mx-auto text-center bg-white/10 backdrop-blur-md rounded-2xl p-10 shadow-lg">
-          <h2 className="text-4xl font-bold mb-6">About Beckley Jones Analytics</h2>
+          <h2 className="text-4xl font-bold mb-6">About Direct Insights Technologies</h2>
 
           <p className="text-lg mb-4">
-            Beckley Jones Analytics is a data consulting firm helping small and medium-sized businesses unlock the full value of their data.
+            Direct Insights Technologies is a data consulting firm helping small and medium-sized businesses unlock the full value of their data.
             We deliver practical analytics solutions designed to drive real business outcomes and simplify decision-making.
           </p>
 
