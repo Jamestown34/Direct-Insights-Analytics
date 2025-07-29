@@ -4,7 +4,8 @@ const CEO = () => {
   return (
     <section
       id="ceo"
-      className="py-20 px-6 bg-gradient-to-r from-[#001288] via-[#0257a6] to-[#93cbff]"
+      className="py-20 px-6"
+      style={{ backgroundColor: "#93cbff" }}
     >
       <div className="max-w-7xl mx-auto flex items-start justify-start space-x-12 backdrop-blur-lg bg-black/20 p-10 rounded-2xl shadow-xl">
         {/* CEO Image and Text */}
