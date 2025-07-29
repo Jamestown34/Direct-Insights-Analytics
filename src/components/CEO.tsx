@@ -1,62 +1,68 @@
-import { TwitterIcon, LinkedinIcon, MailIcon, PhoneIcon } from "lucide-react";
+import { FaLinkedin, FaTwitter, FaEnvelope, FaWhatsapp } from "react-icons/fa";
 
 const CEO = () => {
   return (
-    <section id="ceo" className="py-20 px-6 bg-gray-50">
-      <div className="max-w-7xl mx-auto flex items-start justify-start space-x-12">
-        {/* CEO Image and Info */}
+    <section
+      id="ceo"
+      className="py-20 px-6 bg-gradient-to-r from-[#001288] via-[#0257a6] to-[#93cbff]"
+    >
+      <div className="max-w-7xl mx-auto flex items-start justify-start space-x-12 backdrop-blur-lg bg-black/20 p-10 rounded-2xl shadow-xl">
+        {/* CEO Image and Text */}
         <div className="flex flex-col items-start w-1/4">
           <img
             src="/images/ceo-image.png"
-            alt="Atumonye James"
-            className="w-48 h-60 rounded-full object-cover mb-4"
+            alt="CEO Image"
+            className="w-48 h-60 rounded-full object-cover mb-4 border-4 border-white shadow-lg"
           />
-          <h2 className="text-4xl font-bold mb-2">Atumonye James</h2>
-          <p className="text-xl text-muted-foreground mb-4">
+          <h2 className="text-4xl font-bold text-white mb-2">Atumonye James</h2>
+          <p className="text-xl text-gray-100 mb-4">
             CEO & Founder, Direct Insights Technologies
           </p>
-          <p className="text-lg text-muted-foreground">
-            Welcome to Direct Insights Technologies! We're here to help you turn data into real business solutions.
+          <p className="text-lg text-gray-100">
+            Welcome to Direct Insights Technologies! We're here to help you turn
+            data into real business solutions.
           </p>
 
-          {/* Contact Button */}
-          <a href="#contact">
-            <button className="btn btn-primary mt-6">Get in Touch</button>
-          </a>
-
-          {/* Social Icons */}
-          <div className="flex items-center mt-6 space-x-4 text-muted-foreground">
+          {/* Social Links */}
+          <div className="flex space-x-4 mt-6">
             <a
               href="https://x.com/AtumonyeJ1795"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="X (Twitter)"
+              className="bg-white text-[#001288] p-3 rounded-full shadow-md hover:scale-110 transition"
             >
-              <TwitterIcon className="w-5 h-5 hover:text-primary" />
+              <FaTwitter className="text-xl" />
             </a>
             <a
               href="https://www.linkedin.com/in/atumonye-james-a81147267/"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="LinkedIn"
+              className="bg-white text-[#001288] p-3 rounded-full shadow-md hover:scale-110 transition"
             >
-              <LinkedinIcon className="w-5 h-5 hover:text-primary" />
+              <FaLinkedin className="text-xl" />
             </a>
             <a
-              href="mailto:chuksjames05@gmail.com"
-              aria-label="Email"
+              href="mailto:chumes05@gmail.com"
+              className="bg-white text-[#001288] p-3 rounded-full shadow-md hover:scale-110 transition"
             >
-              <MailIcon className="w-5 h-5 hover:text-primary" />
+              <FaEnvelope className="text-xl" />
             </a>
             <a
-              href="https://wa.me/2348031899153"
+              href="https://wa.me/234801234567"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="WhatsApp"
+              className="bg-white text-[#001288] p-3 rounded-full shadow-md hover:scale-110 transition"
             >
-              <PhoneIcon className="w-5 h-5 hover:text-primary" />
+              <FaWhatsapp className="text-xl" />
             </a>
           </div>
+
+          {/* Optional Button */}
+          <a href="#contact">
+            <button className="mt-6 bg-white text-[#001288] px-6 py-2 font-semibold rounded-full shadow-md hover:scale-105 transition">
+              Get in Touch
+            </button>
+          </a>
         </div>
       </div>
     </section>
