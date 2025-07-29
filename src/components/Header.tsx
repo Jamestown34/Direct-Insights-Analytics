@@ -24,7 +24,7 @@ const Header = () => {
           onClick={handleHomeClick}
           className="text-2xl font-bold text-primary cursor-pointer"
         >
-          Beckley Jones Analytics
+          Direct Insights Technologies
         </span>
 
         {/* Desktop Nav */}
