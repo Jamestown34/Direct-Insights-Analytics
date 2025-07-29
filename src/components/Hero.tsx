@@ -34,10 +34,10 @@ const Hero = () => {
         {/* Left: Text and Buttons */}
         <div className="space-y-8">
           <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
-            Data Driven <span className="text-white font-extrabold">solutions</span> that grow your business
+            Unlock Business <span className="text-white font-extrabold">Growth Through</span> Intelligent Data Analytics
           </h1>
           <p className="text-xl text-white/80 leading-relaxed">
-            Transform your data into actionable insights with expert solutions in analytics, automation, and strategy.
+            Advanced analytics & consulting services to drive strategic decisions and digital transformation for forward-thinking businesses.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a
