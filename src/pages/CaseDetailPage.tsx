@@ -1,99 +1,145 @@
+import React from "react";
 import { useParams } from "react-router-dom";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
+
+const caseDetails = {
+  "drug-expiry": {
+    title: "Drug Expiry Tracker for Rural Pharmacies",
+    client: "Urchman Pharmacy & Stores Nigeria",
+    image: "/images/cases/drug-expiry.png",
+    description: `
+**Client**  
+Urchman Pharmacy & Stores Nigeria is a local pharmaceutical provider in Eastern Nigeria focused on delivering affordable medicine to underserved communities.
+
+**Problem**  
+Manual drug tracking systems often led to expired drugs remaining in stock, posing health risks to customers and financial losses for the business. The client lacked technical personnel to monitor stock health and required a lightweight system that handled everything from data collection to analysis without the need for an in-house data analyst.
+
+**Goal**  
+To build a complete analytical web tool that would streamline the tracking of drug expiry dates. The solution needed to:
+- Enable real-time drug data collection.
+- Store and structure expiry data.
+- Visualize stock health on a dashboard.
+- Allow easy CSV download of inventory data.
+
+**Results**  
+- A responsive web app with expiry alert dashboard.
+- Integrated data collection and cloud storage.
+- CSV download for audits and reporting.
+- No need for dedicated data personnel.
+
+**Client Feedback**  
+> "This tool has transformed how we manage our pharmacy. No more manual inventory tracking. We can now spot issues before they become problems."  
+> — Chinedu U., Owner, Urchman Pharmacy
+
+**Tech Stack**  
+React · TailwindCSS · Supabase · Streamlit (Prototype Phase)
+
+![App Overview](/images/cases/drug-expiry.png)
+![Dashboard View](/images/cases/drug-expiry.png)
+![CSV Export UI](/images/cases/drug-expiry.png)
+    `,
+  },
+
+  "telecom-tableau": {
+    title: "Data-rich Tableau Dashboards for Telecom Insights",
+    client: "Wing Telecom, New York",
+    image: "/images/cases/telecom-tableau.png",
+    description: `
+**Client**  
+Wing is a New York-based telecom provider offering flexible data plans and services.
+
+**Problem**  
+Wing issues a large number of credits every month and wanted to understand discrepancies, detect fraud, and analyze metrics like ARPU and total revenue by state/zip. They lacked the in-house expertise to build effective Tableau dashboards.
+
+**Goal**  
+- Build dynamic Tableau dashboards.
+- Visualize credit issuance, plan allocation, revenue, and delivery patterns.
+- Help identify fraudulent activity and optimize operations.
+
+**Results**  
+- Comprehensive Tableau reports by state/zip.
+- Data-driven insights for shipping decisions.
+
+**Client Feedback**  
+> "Nikolay’s team has been phenomenal to work with... we look forward to more data science projects together."  
+> — Nick Lowry, Chief Growth Officer
+
+**Tech Stack**  
+Tableau · PostgreSQL · Google Sheets · Python
+
+![State Breakdown Chart](/images/cases/telecom-tableau.png)
+![Revenue Visualization](/images/cases/telecom-tableau.png)
+![Plan Allocation Table](/images/cases/telecom-tableau.png)
+    `,
+  },
+
+  "inventory-predictor": {
+    title: "Inventory Demand Predictor for FMCG Startup",
+    client: "ShelfSmart Nigeria",
+    image: "/images/cases/inventory-predictor.png",
+    description: `
+**Client**  
+ShelfSmart is a fast-growing FMCG distributor looking to optimize inventory across their warehouse network.
+
+**Problem**  
+They suffered frequent under/overstock situations due to lack of predictive planning and granular demand insights across locations.
+
+**Goal**  
+- Use historical sales to train ML models for demand prediction.
+- Help business managers stock based on forecast.
+- Build a visual dashboard to monitor stock and accuracy.
+
+**Results**  
+- Achieved 85% forecast accuracy within 3 months.
+- Reduced overstocking by 30%.
+- Improved daily operational efficiency and saved working capital.
+
+**Client Feedback**  
+> "Your solution is saving us time, money, and stress. Thank you for making this simple and useful!"  
+> — Mojisola A., Inventory Lead, ShelfSmart
+
+**Tech Stack**  
+Python · scikit-learn · Power BI · PostgreSQL
+
+![Prediction Dashboard](/images/cases/inventory-predictor.png)
+![Sales Forecast Trends](/images/cases/inventory-predictor.png)
+![Stock Deviation Table](/images/cases/inventory-predictor.png)
+    `,
+  },
+};
 
 const CaseDetailPage = () => {
   const { caseId } = useParams();
-
-  // Define case data for each case (this can be fetched from an API in real projects)
-const caseDetails = {
-  "drug-expiry": {
-    title: "Pharmacy Expiry Tracker for Urchman Pharmacy & Stores",
-    description: `
-      **Client**  
-      Urchman Pharmacy & Stores Nigeria is a rural-based pharmaceutical retail store committed to serving its local community with quality healthcare products. The owner approached us with a need for a simple yet powerful digital tool to handle expiry tracking without hiring an in-house analyst.
-
-      **Problem**  
-      The pharmacy staff relied heavily on notebooks and memory to track drug expiry dates. This manual system frequently led to expired drugs being left on shelves, resulting in health risks, financial waste, and reputational harm. With increasing stock volume, it became impractical to keep up. The client needed an automated solution to monitor expirations, store structured data, and generate reports — without requiring data analysis expertise.
-
-      **Goal**  
-      To build an intelligent expiry tracking tool that:
-      - Allows manual data entry of inventory (drug name, batch number, expiry date)
-      - Stores all data securely and persistently
-      - Displays visual summaries of expiring items
-      - Offers a one-click download of structured inventory reports in CSV
-      - Runs smoothly on low-bandwidth internet in rural areas
-
-      **Solution**  
-      We developed a full-stack analytical web app built on Streamlit and Supabase.  
-      The application begins with a simple form to collect inventory data. Submissions are sent to a Supabase PostgreSQL database in real time, ensuring consistent and secure storage.
-
-      📷 ![Form Input](/images/cases/drug-expiry.png)
-
-      Once data is entered, a live dashboard displays metrics such as:
-      - Drugs expiring soon (within 30 days)
-      - Inventory summary by category and quantity
-      - High-risk batches flagged for review
-
-      📷 ![Dashboard Summary](/images/cases/drug-expiry.png)
-
-      A CSV export feature allows staff to download structured data for offline review, audits, or submission to regulators — removing the need for manual reporting or an in-house analyst.
-
-      📷 ![CSV Export](/images/cases/drug-expiry.png)
-
-      **Results**  
-      - Eliminated expired drug losses within the first month of use  
-      - Improved operational efficiency and compliance  
-      - Enabled store manager to track expiry dates independently  
-      - Increased community trust and reduced customer complaints  
-
-      **Technologies**  
-      - Streamlit  
-      - Supabase  
-      - Python  
-      - PostgreSQL  
-
-      **Client Feedback**  
-      “This app helped transform our inventory tracking with zero technical complexity. Even our assistants now know when drugs are about to expire.”  
-      — Chijioke U., Manager, Urchman Pharmacy & Stores Nigeria
-    `,
-    image: "/images/cases/drug-expiry.png",
-  },
-    "sales-dashboard": {
-      title: "Sales Dashboard for a Sales Organization",
-      description:
-        "Alonso Business Inc. needed an efficient way to track sales performance across different territories and timeframes. This case study involves building an interactive dashboard that helps the sales team quickly monitor KPIs and make informed decisions.",
-      image: "/images/cases/sales-dashboard.png",
-    },
-    "return-analysis": {
-      title: "Customer Return Analysis for Online Retail",
-      description:
-        "E-commerce platforms often face challenges with high return rates, which can hurt profits. This case study outlines the development of a predictive model and dashboard to analyze return patterns, reduce unnecessary returns, and improve customer satisfaction for Lusty Chic Wears.",
-      image: "/images/cases/Return-Analysis.png",
-    },
-  };
-
-  // Get the specific case details using caseId from the URL
   const caseDetail = caseDetails[caseId];
 
   if (!caseDetail) {
-    return <div>Case not found.</div>;
+    return (
+      <div className="min-h-screen flex items-center justify-center text-xl text-white bg-gray-800">
+        Case not found.
+      </div>
+    );
   }
 
   return (
-    <div
-      className="min-h-screen bg-gradient-to-r from-[#001288] via-[#0257a6] to-[#93cbff] p-6"
-      style={{ backgroundSize: "cover", backgroundAttachment: "fixed" }}
-    >
-      <div className="max-w-4xl mx-auto bg-white/60 p-8 rounded-lg shadow-xl backdrop-blur-lg">
+    <div className="min-h-screen bg-gradient-to-r from-[#001288] via-[#0257a6] to-[#93cbff] p-6">
+      <div className="max-w-4xl mx-auto bg-white/60 p-8 rounded-lg shadow-xl backdrop-blur-md">
         <h1 className="text-3xl font-bold text-[#001288] mb-4">{caseDetail.title}</h1>
-        <div className="flex justify-center mb-6">
-          {/* Capped Image */}
+
+        {/* Image with fixed 16:9 aspect ratio */}
+        <div className="aspect-w-16 aspect-h-9 mb-6 rounded-lg overflow-hidden shadow-lg">
           <img
             src={caseDetail.image}
             alt={caseDetail.title}
-            className="max-w-full h-[300px] object-contain rounded-lg shadow-lg"
+            className="w-full h-full object-cover"
           />
         </div>
-        <p className="text-lg text-gray-800 leading-relaxed">{caseDetail.description}</p>
+
+        <ReactMarkdown
+          className="prose max-w-none text-gray-800"
+          children={caseDetail.description}
+          remarkPlugins={[remarkGfm]}
+        />
       </div>
     </div>
   );
