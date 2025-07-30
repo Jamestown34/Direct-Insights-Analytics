@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
-import { Link } from "react-router-dom"; // Use Link from react-router-dom for navigation
+import { Link } from "react-router-dom";
 
 const AllCasesPage = () => {
   const cases = [
@@ -31,7 +31,24 @@ const AllCasesPage = () => {
       metrics: "18% drop in avoidable returns",
       link: "/cases/return-analysis",
     },
-    // Add more cases as needed
+    {
+      title: "Fleet Decision Dashboard for Spotter Transportation",
+      description:
+        "Spotter Inc., United States: Developed a truck-level evaluation model combining maintenance, mileage, revenue, and resale data to recommend which trucks to keep, sell, or inspect. Delivered via audit-ready Excel and dashboards.",
+      image: "/images/cases/truck-eval.png",
+      tags: ["Python", "Excel", "Logistics"],
+      metrics: "102 trucks flagged for sale",
+      link: "/cases/truck-eval",
+    },
+    {
+      title: "Seller Risk Framework for AfriMarket (E-Commerce)",
+      description:
+        "AfriMarket, Nigeria & Ghana: Built a fraud detection and seller profiling system using ML + dashboards. It flags fake reviews, return-heavy sellers, and risky products across regions and categories.",
+      image: "/images/cases/afrimarket-risk.png",
+      tags: ["Python", "Streamlit", "NLP", "E-Commerce"],
+      metrics: "5 risky sellers identified",
+      link: "/cases/afrimarket-risk",
+    },
   ];
 
   return (
@@ -54,13 +71,12 @@ const AllCasesPage = () => {
               className="bg-card rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group"
             >
               {/* Image container with fixed 16:9 aspect ratio */}
-              <div className="relative" style={{ paddingBottom: "56.25%" }}> {/* 16:9 ratio */}
+              <div className="relative" style={{ paddingBottom: "56.25%" }}>
                 <img
                   src={caseStudy.image}
                   alt={caseStudy.title}
                   className="object-cover absolute top-0 left-0 w-full h-full"
                 />
-                {/* Metrics background with gradient and bold white text */}
                 <div className="absolute bottom-4 left-4 bg-gradient-to-r from-[#001288] to-[#0257a6] rounded-lg px-3 py-1">
                   <span className="text-white font-bold text-sm">
                     {caseStudy.metrics}
@@ -68,7 +84,6 @@ const AllCasesPage = () => {
                 </div>
               </div>
 
-              {/* Card Content */}
               <div className="p-8 flex-1 flex flex-col">
                 <h3 className="text-2xl font-semibold text-card-foreground mb-4">
                   {caseStudy.title}
@@ -88,7 +103,6 @@ const AllCasesPage = () => {
                   ))}
                 </div>
 
-                {/* View Case Study Button */}
                 <div className="mt-auto">
                   <Link to={caseStudy.link}>
                     <Button
