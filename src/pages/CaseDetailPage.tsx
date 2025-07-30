@@ -39,6 +39,8 @@ Streamlit, Supabase, PostgreSQL, Python
 **Client**  
 Alonso Business Inc., United States
 
+📷 ![Dashboard](/images/cases/sales-dashboard.png)
+
 **Problem**  
 Their sales team lacked real-time visibility into KPIs across territories and timeframes.
 
@@ -65,6 +67,8 @@ Power BI, Excel, SQL
 **Client**  
 Lusty Chic Wears, United Kingdom
 
+📷 ![Return Dashboard](/images/cases/Return-Analysis1.png)
+
 **Problem**  
 They faced high return rates hurting margins and customer experience.
 
@@ -74,11 +78,12 @@ We built a logistic regression model and dashboard to:
 - Spot risky SKUs
 - Guide improvements in product and logistics
 
-📷 ![Return Dashboard](/images/cases/Return-Analysis.png)
 
 **Results**  
 - 18% reduction in avoidable returns  
 - Better logistics and happier customers
+
+📷 ![Return Dashboard](/images/cases/Return-Analysis2.png)
 
 **Tools Used**  
 Python, Logistic Regression, Tableau
@@ -91,6 +96,8 @@ Python, Logistic Regression, Tableau
 **Client**  
 Spotter is a U.S.-based long-haul transportation company managing a large fleet across multiple states.
 
+📷 ![Fleet Evaluation Summary](/images/cases/truck1.png)
+
 **Problem**  
 The company faced growing repair costs and underutilized trucks. Without integrated analytics, they struggled to decide which trucks to keep, sell, or inspect — risking unnecessary spend and compliance issues.
 
@@ -100,7 +107,6 @@ We built a data-driven fleet evaluation model using **Python + Excel Dashboardin
 - Recommend **Keep / Sell / Inspect**
 - Export audit-ready reports with reasoning for each decision
 
-📷 ![Fleet Evaluation Summary](/images/cases/truck1.png)  
 📷 ![Spotter Dashboard View](/images/cases/truck2.png)
 
 **Results**  
@@ -108,6 +114,8 @@ We built a data-driven fleet evaluation model using **Python + Excel Dashboardin
 - 61 trucks validated to keep in rotation  
 - 120 flagged for inspection due to data gaps or borderline metrics  
 - Gave execs clear insight into fleet health in one glance
+
+📷 ![Spotter Dashboard View](/images/cases/truck3.png)
 
 **Tools Used**  
 Python (Pandas), Excel, Truck Paper® Listings
@@ -119,6 +127,8 @@ Python (Pandas), Excel, Truck Paper® Listings
       description: `
 **Client**  
 AfriMarket is a fast-scaling online marketplace operating across Nigeria and Ghana, similar to Jumia. Facing a spike in user complaints, fake reviews, and poor delivery experiences, they needed urgent backend intelligence to restore buyer trust.
+
+📷 ![Complaint Heatmap & Delay View](/images/cases/e_commerce2.png)
 
 **Problem**  
 Customer satisfaction was tanking despite record site traffic. High return rates, sketchy sellers, and fraudulent 5-star reviews were damaging brand reputation. The Lagos warehouse’s overload further distorted delivery data, making trust analysis difficult.
@@ -136,14 +146,14 @@ We led a full data intelligence audit across a 3-month transaction log using **P
 - Deliver a dashboard highlighting sellers to suspend, categories to watch, and delay hotspots  
 
 📷 ![Risk Dashboard Overview](/images/cases/e_commerce1.png)  
-📷 ![Complaint Heatmap & Delay View](/images/cases/e_commerce2.png)  
-📷 ![Top Seller & Category Risk Report](/images/cases/e_commerce3.png)
 
 **Results**  
 - Suspicious seller list generated based on returns, fake reviews & complaints  
 - Top-5 categories linked to >70% of delivery complaints  
 - Verified hypothesis: delivery method significantly impacts customer ratings  
 - Rebuilt customer trust framework & policy to flag future risk early
+
+📷 ![Top Seller & Category Risk Report](/images/cases/e_commerce3.png)
 
 **Tools Used**  
 Python (Pandas, scikit-learn, Streamlit), Matplotlib/Seaborn, Power BI, NLP (TF-IDF for review fraud detection)
