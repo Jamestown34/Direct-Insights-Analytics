@@ -31,8 +31,8 @@ We built a full-stack expiry tracker using **Streamlit** + **Supabase**. Feature
 **Tools Used**  
 Streamlit, Supabase, PostgreSQL, Python
       `,
-      image: "/images/cases/drug-expiry.png",
     },
+
     "sales-dashboard": {
       title: "Sales Dashboard for a Sales Organization",
       description: `
@@ -57,8 +57,8 @@ We created a live Power BI dashboard tracking:
 **Tools Used**  
 Power BI, Excel, SQL
       `,
-      image: "/images/cases/sales-dashboard.png",
     },
+
     "return-analysis": {
       title: "Customer Return Analysis for Online Retail",
       description: `
@@ -83,11 +83,11 @@ We built a logistic regression model and dashboard to:
 **Tools Used**  
 Python, Logistic Regression, Tableau
       `,
-      image: "/images/cases/Return-Analysis.png",
     },
-"truck-eval": {
-  title: "Fleet Decision Dashboard for Spotter Transportation",
-  description: `
+
+    "truck-eval": {
+      title: "Fleet Decision Dashboard for Spotter Transportation",
+      description: `
 **Client**  
 Spotter is a U.S.-based long-haul transportation company managing a large fleet across multiple states.
 
@@ -100,7 +100,8 @@ We built a data-driven fleet evaluation model using **Python + Excel Dashboardin
 - Recommend **Keep / Sell / Inspect**
 - Export audit-ready reports with reasoning for each decision
 
-📷 ![Fleet Dashboard](/images/cases/truck-eval.png)
+📷 ![Fleet Evaluation Summary](/images/cases/truck-eval.png)  
+📷 ![Spotter Dashboard View](/images/cases/truck-eval-2.png)
 
 **Results**  
 - 102 trucks flagged for sale — $1.1M in avoidable repairs  
@@ -110,34 +111,57 @@ We built a data-driven fleet evaluation model using **Python + Excel Dashboardin
 
 **Tools Used**  
 Python (Pandas), Excel, Truck Paper® Listings
-  `,
-  image: "/images/cases/truck-eval.png",
-},
+      `,
+    },
+
+    "afrimarket-risk": {
+      title: "E-Commerce Seller Risk Framework for AfriMarket (Nigeria & Ghana)",
+      description: `
+**Client**  
+AfriMarket is a fast-scaling online marketplace operating across Nigeria and Ghana, similar to Jumia. Facing a spike in user complaints, fake reviews, and poor delivery experiences, they needed urgent backend intelligence to restore buyer trust.
+
+**Problem**  
+Customer satisfaction was tanking despite record site traffic. High return rates, sketchy sellers, and fraudulent 5-star reviews were damaging brand reputation. The Lagos warehouse’s overload further distorted delivery data, making trust analysis difficult.
+
+**Solution**  
+We led a full data intelligence audit across a 3-month transaction log using **Python + Streamlit + Machine Learning** to:
+
+- Clean & normalize noisy data (seller names, categories, city labels)  
+- Engineer key trust signals like:  
+  - 🚚 Delivery Delay  
+  - 🔁 Return Rate  
+  - 😡 Complaint Rate  
+  - 🤖 Review Fraud Flags  
+- Build a **Seller Risk Score** and train a classifier to predict high-return risks  
+- Deliver a dashboard highlighting sellers to suspend, categories to watch, and delay hotspots  
+
+📷 ![Risk Dashboard Overview](/images/cases/afrimarket-risk.png)  
+📷 ![Complaint Heatmap & Delay View](/images/cases/afrimarket-risk-2.png)  
+📷 ![Top Seller & Category Risk Report](/images/cases/afrimarket-risk-3.png)
+
+**Results**  
+- Suspicious seller list generated based on returns, fake reviews & complaints  
+- Top-5 categories linked to >70% of delivery complaints  
+- Verified hypothesis: delivery method significantly impacts customer ratings  
+- Rebuilt customer trust framework & policy to flag future risk early
+
+**Tools Used**  
+Python (Pandas, scikit-learn, Streamlit), Matplotlib/Seaborn, Power BI, NLP (TF-IDF for review fraud detection)
+      `,
+    },
   };
 
   const caseDetail = caseDetails[caseId];
 
   if (!caseDetail) {
-    return <div className="p-10 text-center text-white">Case not found.</div>;
+    return <div className="p-10 text-center text-black">Case not found.</div>;
   }
 
   return (
-    <div
-      className="min-h-screen bg-gradient-to-r from-[#001288] via-[#0257a6] to-[#93cbff] p-6"
-      style={{ backgroundSize: "cover", backgroundAttachment: "fixed" }}
-    >
-      <div className="max-w-4xl mx-auto bg-white/60 p-6 rounded-xl shadow-xl backdrop-blur-lg">
-        <h1 className="text-3xl font-bold text-[#001288] mb-6">
-          {caseDetail.title}
-        </h1>
-        <div className="w-full aspect-video mb-6 overflow-hidden rounded-lg shadow-md">
-          <img
-            src={caseDetail.image}
-            alt={caseDetail.title}
-            className="w-full h-full object-contain"
-          />
-        </div>
-        <div className="prose prose-lg max-w-none text-gray-800">
+    <div className="min-h-screen bg-white text-black px-6 py-12">
+      <div className="max-w-4xl mx-auto">
+        <h1 className="text-4xl font-bold mb-8">{caseDetail.title}</h1>
+        <div className="prose prose-lg max-w-none">
           <ReactMarkdown>{caseDetail.description}</ReactMarkdown>
         </div>
       </div>
