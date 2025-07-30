@@ -35,7 +35,7 @@ const AllCasesPage = () => {
       title: "Fleet Decision Dashboard for Spotter Transportation",
       description:
         "Spotter Inc., United States: Developed a truck-level evaluation model combining maintenance, mileage, revenue, and resale data to recommend which trucks to keep, sell, or inspect. Delivered via audit-ready Excel and dashboards.",
-      image: "/images/cases/truck-eval.png",
+      image: "/images/cases/truck1.png",
       tags: ["Python", "Excel", "Logistics"],
       metrics: "102 trucks flagged for sale",
       link: "/cases/truck-eval",
@@ -44,7 +44,7 @@ const AllCasesPage = () => {
       title: "Seller Risk Framework for AfriMarket (E-Commerce)",
       description:
         "AfriMarket, Nigeria & Ghana: Built a fraud detection and seller profiling system using ML + dashboards. It flags fake reviews, return-heavy sellers, and risky products across regions and categories.",
-      image: "/images/cases/afrimarket-risk.png",
+      image: "/images/cases/e_commerce1.png",
       tags: ["Python", "Streamlit", "NLP", "E-Commerce"],
       metrics: "5 risky sellers identified",
       link: "/cases/afrimarket-risk",
