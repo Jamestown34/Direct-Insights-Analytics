@@ -176,37 +176,31 @@ Python (Pandas, scikit-learn, Streamlit), Matplotlib/Seaborn, Power BI, NLP (TF-
     <div className="min-h-screen bg-white text-black px-6 py-12">
       <div className="max-w-4xl mx-auto">
         <h1 className="text-4xl font-bold mb-8">{caseDetail.title}</h1>
-        <div className="prose prose-lg max-w-none case-images">
-          <ReactMarkdown>{caseDetail.description}</ReactMarkdown>
+        <div className="max-w-none case-images">
+          <ReactMarkdown 
+            components={{
+              img: ({src, alt}) => (
+                <img 
+                  src={src} 
+                  alt={alt}
+                  style={{
+                    maxWidth: '100%',
+                    maxHeight: window.innerWidth <= 768 ? '250px' : '400px',
+                    height: 'auto',
+                    width: 'auto',
+                    objectFit: 'contain',
+                    margin: '1.5rem 0',
+                    borderRadius: '8px',
+                    boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'
+                  }}
+                />
+              )
+            }}
+          >
+            {caseDetail.description}
+          </ReactMarkdown>
         </div>
       </div>
-      
-      <style jsx>{`
-        .case-images :global(img) {
-          max-width: 100% !important;
-          max-height: 400px !important;
-          height: auto !important;
-          width: auto !important;
-          object-fit: contain !important;
-          margin: 1.5rem 0 !important;
-          border-radius: 8px;
-          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        
-        .prose :global(img) {
-          max-width: 100% !important;
-          max-height: 400px !important;
-          height: auto !important;
-          width: auto !important;
-        }
-        
-        @media (max-width: 768px) {
-          .case-images :global(img),
-          .prose :global(img) {
-            max-height: 250px !important;
-          }
-        }
-      `}</style>
     </div>
   );
 };
