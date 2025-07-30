@@ -42,13 +42,13 @@ const CEO = () => {
               <FaLinkedin className="text-xl" />
             </a>
             <a
-              href="mailto:chumes05@gmail.com"
+              href="mailto:chuksjames@gmail.com"
               className="bg-white text-[#001288] p-3 rounded-full shadow-md hover:scale-110 transition"
             >
               <FaEnvelope className="text-xl" />
             </a>
             <a
-              href="https://wa.me/234801234567"
+              href="https://wa.me/2348031899153"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white text-[#001288] p-3 rounded-full shadow-md hover:scale-110 transition"
