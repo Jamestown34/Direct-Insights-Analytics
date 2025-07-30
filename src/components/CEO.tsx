@@ -7,9 +7,9 @@ const CEO = () => {
       className="py-20 px-6"
       style={{ backgroundColor: "#93cbff" }}
     >
-      <div className="max-w-7xl mx-auto flex items-start justify-start space-x-12 backdrop-blur-lg bg-black/20 p-10 rounded-2xl shadow-xl">
+      <div className="max-w-7xl mx-auto flex items-center justify-center backdrop-blur-lg bg-black/20 p-10 rounded-2xl shadow-xl">
         {/* CEO Image and Text */}
-        <div className="flex flex-col items-start w-1/4">
+        <div className="flex flex-col items-center text-center">
           <img
             src="/images/ceo-image.png"
             alt="CEO Image"
@@ -23,7 +23,6 @@ const CEO = () => {
             Welcome to Direct Insights Technologies! We're here to help you turn
             data into real business solutions.
           </p>
-
           {/* Social Links */}
           <div className="flex space-x-4 mt-6">
             <a
@@ -57,7 +56,6 @@ const CEO = () => {
               <FaWhatsapp className="text-xl" />
             </a>
           </div>
-
           {/* Optional Button */}
           <a href="#contact">
             <button className="mt-6 bg-white text-[#001288] px-6 py-2 font-semibold rounded-full shadow-md hover:scale-105 transition">
