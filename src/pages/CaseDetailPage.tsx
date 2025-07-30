@@ -85,6 +85,34 @@ Python, Logistic Regression, Tableau
       `,
       image: "/images/cases/Return-Analysis.png",
     },
+"truck-eval": {
+  title: "Fleet Decision Dashboard for Spotter Transportation",
+  description: `
+**Client**  
+Spotter is a U.S.-based long-haul transportation company managing a large fleet across multiple states.
+
+**Problem**  
+The company faced growing repair costs and underutilized trucks. Without integrated analytics, they struggled to decide which trucks to keep, sell, or inspect — risking unnecessary spend and compliance issues.
+
+**Solution**  
+We built a data-driven fleet evaluation model using **Python + Excel Dashboarding**. The analysis integrated 6 internal datasets and Truck Paper listings to:
+- Score every truck by maintenance, mileage, resale, and usage
+- Recommend **Keep / Sell / Inspect**
+- Export audit-ready reports with reasoning for each decision
+
+📷 ![Fleet Dashboard](/images/cases/truck-eval.png)
+
+**Results**  
+- 102 trucks flagged for sale — $1.1M in avoidable repairs  
+- 61 trucks validated to keep in rotation  
+- 120 flagged for inspection due to data gaps or borderline metrics  
+- Gave execs clear insight into fleet health in one glance
+
+**Tools Used**  
+Python (Pandas), Excel, Truck Paper® Listings
+  `,
+  image: "/images/cases/truck-eval.png",
+},
   };
 
   const caseDetail = caseDetails[caseId];
