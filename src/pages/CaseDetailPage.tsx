@@ -183,18 +183,27 @@ Python (Pandas, scikit-learn, Streamlit), Matplotlib/Seaborn, Power BI, NLP (TF-
       
       <style jsx>{`
         .case-images :global(img) {
-          max-width: 100%;
-          max-height: 400px;
-          height: auto;
-          object-fit: contain;
-          margin: 1.5rem 0;
+          max-width: 100% !important;
+          max-height: 400px !important;
+          height: auto !important;
+          width: auto !important;
+          object-fit: contain !important;
+          margin: 1.5rem 0 !important;
           border-radius: 8px;
           box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         
+        .prose :global(img) {
+          max-width: 100% !important;
+          max-height: 400px !important;
+          height: auto !important;
+          width: auto !important;
+        }
+        
         @media (max-width: 768px) {
-          .case-images :global(img) {
-            max-height: 250px;
+          .case-images :global(img),
+          .prose :global(img) {
+            max-height: 250px !important;
           }
         }
       `}</style>
