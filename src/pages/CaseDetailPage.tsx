@@ -11,6 +11,8 @@ const CaseDetailPage = () => {
 **Client**  
 Urchman Pharmacy & Stores Nigeria is a rural-based pharmaceutical retail store committed to serving its local community with quality healthcare products.
 
+📷 ![Form Input](/images/cases/drug-expiry.png)
+
 **Problem**  
 They relied on notebooks and memory to track expiry dates. This led to health risks, wasted inventory, and compliance issues.
 
@@ -19,22 +21,25 @@ We built a full-stack expiry tracker using **Streamlit** + **Supabase**. Feature
 - Manual inventory entry
 - Expiry alerts & batch summary
 - One-click CSV report download
-
-📷 ![Form Input](/images/cases/drug-expiry.png)  
-📷 ![Dashboard Summary](/images/cases/drug-expiry.png)
+ 
+📷 ![Dashboard Summary](/images/cases/drug-expiry1.jpg)
 
 **Results**  
 - 100% reduction in expired stock  
 - Improved compliance and reporting  
 - Empowered rural staff with zero technical knowledge
 
+📷 ![Form Input](/images/cases/drug-expiry2.jpg)
+
 **Tools Used**  
 Streamlit, Supabase, PostgreSQL, Python
+
+📷 ![Form Input](/images/cases/drug-expiry3.jpg)
       `,
     },
 
     "sales-dashboard": {
-      title: "Sales Dashboard for a Sales Organization",
+      title: "Sales Dashboard for a Business Organization",
       description: `
 **Client**  
 Alonso Business Inc., United States
@@ -50,7 +55,7 @@ We created a live Power BI dashboard tracking:
 - Sales by category, region, and rep
 - Real-time metrics for leadership
 
-📷 ![Dashboard](/images/cases/sales-dashboard.png)
+📷 ![Dashboard](/images/cases/sales-dashboard2.png)
 
 **Impact**  
 - 2× faster sales reporting  
