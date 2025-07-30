@@ -33,7 +33,7 @@ const Hero = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         {/* Left: Text and Buttons */}
         <div className="space-y-8">
-          <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
+          <h1 className="text-3xl lg:text-4xl font-semibold leading-snug"">
             Unlock Business <span className="text-white font-extrabold">Growth Through</span> Intelligent Data Analytics
           </h1>
           <p className="text-xl text-white/80 leading-relaxed">
