@@ -136,7 +136,7 @@ AfriMarket is a fast-scaling online marketplace operating across Nigeria and Gha
 📷 ![Complaint Heatmap & Delay View](/images/cases/e_commerce2.png)
 
 **Problem**  
-Customer satisfaction was tanking despite record site traffic. High return rates, sketchy sellers, and fraudulent 5-star reviews were damaging brand reputation. The Lagos warehouse’s overload further distorted delivery data, making trust analysis difficult.
+Customer satisfaction was tanking despite record site traffic. High return rates, sketchy sellers, and fraudulent 5-star reviews were damaging brand reputation. The Lagos warehouse's overload further distorted delivery data, making trust analysis difficult.
 
 **Solution**  
 We led a full data intelligence audit across a 3-month transaction log using **Python + Streamlit + Machine Learning** to:
@@ -176,10 +176,28 @@ Python (Pandas, scikit-learn, Streamlit), Matplotlib/Seaborn, Power BI, NLP (TF-
     <div className="min-h-screen bg-white text-black px-6 py-12">
       <div className="max-w-4xl mx-auto">
         <h1 className="text-4xl font-bold mb-8">{caseDetail.title}</h1>
-        <div className="prose prose-lg max-w-none">
+        <div className="prose prose-lg max-w-none case-images">
           <ReactMarkdown>{caseDetail.description}</ReactMarkdown>
         </div>
       </div>
+      
+      <style jsx>{`
+        .case-images :global(img) {
+          max-width: 100%;
+          max-height: 400px;
+          height: auto;
+          object-fit: contain;
+          margin: 1.5rem 0;
+          border-radius: 8px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        @media (max-width: 768px) {
+          .case-images :global(img) {
+            max-height: 250px;
+          }
+        }
+      `}</style>
     </div>
   );
 };
