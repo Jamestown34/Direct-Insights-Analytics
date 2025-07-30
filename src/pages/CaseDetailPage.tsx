@@ -100,8 +100,8 @@ We built a data-driven fleet evaluation model using **Python + Excel Dashboardin
 - Recommend **Keep / Sell / Inspect**
 - Export audit-ready reports with reasoning for each decision
 
-📷 ![Fleet Evaluation Summary](/images/cases/truck-eval.png)  
-📷 ![Spotter Dashboard View](/images/cases/truck-eval-2.png)
+📷 ![Fleet Evaluation Summary](/images/cases/truck1.png)  
+📷 ![Spotter Dashboard View](/images/cases/truck2.png)
 
 **Results**  
 - 102 trucks flagged for sale — $1.1M in avoidable repairs  
@@ -135,9 +135,9 @@ We led a full data intelligence audit across a 3-month transaction log using **P
 - Build a **Seller Risk Score** and train a classifier to predict high-return risks  
 - Deliver a dashboard highlighting sellers to suspend, categories to watch, and delay hotspots  
 
-📷 ![Risk Dashboard Overview](/images/cases/afrimarket-risk.png)  
-📷 ![Complaint Heatmap & Delay View](/images/cases/afrimarket-risk-2.png)  
-📷 ![Top Seller & Category Risk Report](/images/cases/afrimarket-risk-3.png)
+📷 ![Risk Dashboard Overview](/images/cases/e_commerce1.png)  
+📷 ![Complaint Heatmap & Delay View](/images/cases/e_commerce2.png)  
+📷 ![Top Seller & Category Risk Report](/images/cases/e_commerce3.png)
 
 **Results**  
 - Suspicious seller list generated based on returns, fake reviews & complaints  
