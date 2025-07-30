@@ -26,10 +26,10 @@ const AllCasesPage = () => {
       title: "Customer Return Analysis for Online Retail",
       description:
         "Lusty Chic Wears, United Kingdom: Built a predictive model and visual dashboard to analyze return patterns, identify at-risk products, and improve customer satisfaction. Integrated directly with their order pipeline.",
-      image: "/images/cases/Return-Analysis.png",
+      image: "/images/cases/Return-Analysis1.png",
       tags: ["Python", "Logistic Regression", "Tableau"],
       metrics: "18% drop in avoidable returns",
-      link: "/cases/return-analysis1",
+      link: "/cases/return-analysis",
     },
     {
       title: "Fleet Decision Dashboard for Spotter Transportation",
