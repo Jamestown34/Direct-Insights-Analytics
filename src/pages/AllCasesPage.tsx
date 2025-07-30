@@ -29,7 +29,7 @@ const AllCasesPage = () => {
       image: "/images/cases/Return-Analysis.png",
       tags: ["Python", "Logistic Regression", "Tableau"],
       metrics: "18% drop in avoidable returns",
-      link: "/cases/return-analysis",
+      link: "/cases/return-analysis1",
     },
     {
       title: "Fleet Decision Dashboard for Spotter Transportation",
